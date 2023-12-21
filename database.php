@@ -1,7 +1,8 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
 
-function get_pdo() {
+function get_pdo()
+{
   $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
   $dotenv->load();
 
@@ -25,5 +26,3 @@ function get_pdo() {
     echo 'Error: ' . $e->getMessage() . '<br>';
   }
 }
-
-
