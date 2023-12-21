@@ -75,8 +75,17 @@ $informacion = new Informacion();
       </tbody>
     </table>
   </div>
-  <div class="text-center">
-    <a href="generar_pdf.php" target="_blank">Descargar PDF</a>
+  <div class="container-fluid">
+    <div class="row text-center mt-4 justify-content-center align-items-center">
+      <div class="form-group text-center col-md-2">
+        <form action="generar_pdf.php" method="post">
+          <label for="primer_registro" class="">Primer registro:</label><br>
+          <input type="number" id="primer_registro" class="form-control mt-2" name="primer_registro" required><br>
+          <label for="ultimo_registro">Último registro:</label><br>
+          <input type="number" id="ultimo_registro" class="form-control mt-2" name="ultimo_registro" required><br>
+          <input type="submit" value="Generar PDF" class="btn btn-warning">
+        </form>
+      </div>
+    </div>
   </div>
-  <!-- TODO: Agregar paginacion -->
 </div>
