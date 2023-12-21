@@ -1,0 +1,6 @@
+
+/vendor/
+/composer.lock
+/composer.json
+*.env
+/data/postgres_data/
